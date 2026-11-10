@@ -1,0 +1,86 @@
+defaults:
+  - default_non_dequant
+name: pol
+type: multiclass
+columns:
+  - name: f5
+    index: 0
+    dtype: numerical
+  - name: f6
+    index: 1
+    dtype: numerical
+  - name: f7
+    index: 2
+    dtype: numerical
+  - name: f8
+    index: 3
+    dtype: numerical
+  - name: f9
+    index: 4
+    dtype: numerical
+  - name: f13
+    index: 5
+    dtype: numerical
+  - name: f14
+    index: 6
+    dtype: numerical
+  - name: f15
+    index: 7
+    dtype: numerical
+  - name: f16
+    index: 8
+    dtype: numerical
+  - name: f17
+    index: 9
+    dtype: numerical
+  - name: f18
+    index: 10
+    dtype: numerical
+  - name: f19
+    index: 11
+    dtype: numerical
+  - name: f20
+    index: 12
+    dtype: numerical
+  - name: f21
+    index: 13
+    dtype: numerical
+  - name: f22
+    index: 14
+    dtype: numerical
+  - name: f23
+    index: 15
+    dtype: numerical
+  - name: f24
+    index: 16
+    dtype: numerical
+  - name: f25
+    index: 17
+    dtype: numerical
+  - name: f26
+    index: 18
+    dtype: numerical
+  - name: f27
+    index: 19
+    dtype: numerical
+  - name: f28
+    index: 20
+    dtype: numerical
+  - name: f29
+    index: 21
+    dtype: numerical
+  - name: f30
+    index: 22
+    dtype: numerical
+  - name: f31
+    index: 23
+    dtype: numerical
+  - name: f32
+    index: 24
+    dtype: numerical
+  - name: f33
+    index: 25
+    dtype: numerical
+  - name: foo
+    index: 26
+    dtype: categorical

@@ -1,0 +1,18 @@
+# Note: repeated above before refactoring.
+dequant_dist: ${.transformations.dequant_dist}
+int_dequant_factor: ${.transformations.int_dequant_factor}
+handler: "TabDiffDataset"
+augment: !!null
+
+# Transformations purely for the encoding scheme used
+# This is extracted from the original code base of TabDiff
+transformations:
+  normalization: !!str "quantile"
+  num_nan_policy: !!str "mean"
+  cat_nan_policy: !!null
+  cat_min_frequency: !!null
+  cat_encoding: !!null
+  y_policy: !!str "default"
+
+  dequant_dist: !!str "none"
+  int_dequant_factor: !!int 0

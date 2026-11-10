@@ -1,0 +1,30 @@
+defaults:
+  - base_learnable    # Learnable step size (or base_nonlearnable (ablation))
+  - unimodmlp_params: mlp
+
+noise_dist: 'uniform_t'       #'uniform_t' or 'log_norm'
+num_timesteps: 50
+
+sampler_params:
+  stochastic_sampler: true
+  second_order_correction: true
+
+edm_params:
+  precond: true
+  sigma_data: 1.0
+  net_conditioning: "sigma"
+
+noise_dist_params:
+  P_mean: -1.2
+  P_std: 1.2
+
+noise_schedule_params:
+  sigma_min: 0.002
+  sigma_max: 80
+  rho: 7
+  eps_max: 1e-3
+  eps_min: 1e-5
+  rho_init: 7.0
+  rho_offset: 5.0
+  k_init: -6.0
+  k_offset: 1.0

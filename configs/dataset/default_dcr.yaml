@@ -1,0 +1,77 @@
+defaults:
+  - default_non_dequant
+name: default_dcr
+type: binary-class
+columns:
+  - name: LIMIT_BAL
+    index: 0
+    dtype: numerical
+  - name: SEX
+    index: 1
+    dtype: categorical
+  - name: EDUCATION
+    index: 2
+    dtype: categorical
+  - name: MARRIAGE
+    index: 3
+    dtype: categorical
+  - name: AGE
+    index: 4
+    dtype: numerical
+  - name: PAY_0
+    index: 5
+    dtype: categorical
+  - name: PAY_2
+    index: 6
+    dtype: categorical
+  - name: PAY_3
+    index: 7
+    dtype: categorical
+  - name: PAY_4
+    index: 8
+    dtype: categorical
+  - name: PAY_5
+    index: 9
+    dtype: categorical
+  - name: PAY_6
+    index: 10
+    dtype: categorical
+  - name: BILL_AMT1
+    index: 11
+    dtype: numerical
+  - name: BILL_AMT2
+    index: 12
+    dtype: numerical
+  - name: BILL_AMT3
+    index: 13
+    dtype: numerical
+  - name: BILL_AMT4
+    index: 14
+    dtype: numerical
+  - name: BILL_AMT5
+    index: 15
+    dtype: numerical
+  - name: BILL_AMT6
+    index: 16
+    dtype: numerical
+  - name: PAY_AMT1
+    index: 17
+    dtype: numerical
+  - name: PAY_AMT2
+    index: 18
+    dtype: numerical
+  - name: PAY_AMT3
+    index: 19
+    dtype: numerical
+  - name: PAY_AMT4
+    index: 20
+    dtype: numerical
+  - name: PAY_AMT5
+    index: 21
+    dtype: numerical
+  - name: PAY_AMT6
+    index: 22
+    dtype: numerical
+  - name: default payment next month
+    index: 23
+    dtype: categorical

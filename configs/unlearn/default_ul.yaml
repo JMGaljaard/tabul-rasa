@@ -1,0 +1,35 @@
+# Describe the unlearn experiment name
+exp_name: ${diffusion.exp_name_model}_ul_${.method}
+model_save_path: ${hydra:runtime.cwd}/ckpt/ul/${.method}/${dataset.name}/${.exp_name}
+result_save_path: ${hydra:runtime.cwd}/result/ul/${.method}/${dataset.name}/${.exp_name}
+
+trainer: UnTrainer
+orientation: !!null
+reference_model: false
+evaluation_parallelism: 10
+seed: 54873116
+
+
+main:
+  # I have no idea what would be good, so maybe a sweep is in order
+  steps: !!null
+  lr: !!null
+  weight_decay: 0
+  ema_decay: 0.997
+  batch_size: 4096
+  check_val_every: 10
+  lr_scheduler: reduce_lr_on_plateau
+  factor: 0.90           # hyperparam for reduce_lr_on_plateau
+  reduce_lr_patience: 50        # hyperparam for reduce_lr_on_plateau
+  # Updated loss scale schedulers. Now configurable!
+  loss_schedules:
+    discrete:
+      # Handler class (constant), scaling by 1
+      weight_schedule: ConstantSchedule
+      loss_lambda: 1.0
+      steps: ${...steps}
+    continuous:
+      # Handler class (constant), scaling by 1
+      weight_schedule: ConstantSchedule
+      loss_lambda: 1.0
+      steps: ${...steps}

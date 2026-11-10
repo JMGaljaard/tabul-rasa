@@ -1,0 +1,25 @@
+defaults:
+    - tabdiff
+    - unlearn: feature_npo
+    - override wandb: debug
+    - override dataset: adult
+    - _self_
+
+wandb:
+  job_type: debug_dtype_NPO_NLL_cat
+
+dataset:
+  handler: TabDiffDataset
+
+exp_name: ${ unlearn.str_repr}_col=${unlearn.column}
+model_load_path: ${hydra:runtime.cwd}/ckpt/${dataset.name}/${diffusion.exp_name_model}
+model_save_path: ${hydra:runtime.cwd}/ckpt/${dataset.name}/ul/${diffusion.exp_name_model}/${.exp_name}
+result_save_path: ${hydra:runtime.cwd}/debug/${dataset.name}/ul/${diffusion.exp_name_model}/${.exp_name}
+
+unlearn:
+    column: '8' # '0'
+    beta: 10
+    main:
+      steps: 500
+      lr: 0.001
+      check_val_every: 100

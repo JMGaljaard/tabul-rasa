@@ -1,0 +1,8 @@
+deterministic: true
+debug: false
+gpu: true
+seed: 4512468
+num_runs: 20
+
+# Note: speeds up evaluation considerably
+evaluation_parallelism: 10

@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - tabdiff_ddpm
+  - unlearn: feature
+  - override wandb: unlearn
+# TODO: Save-path / load path.
+
+# Unlearn layout
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      dataset: adult
+      unlearn.column: "'9', '8'" # Define as a list of strings, explicitly escaped
+      unlearn.main.steps: 100, 20 #
+      unlearn.main.lr: 1e-4, 1e-3, 1e-2

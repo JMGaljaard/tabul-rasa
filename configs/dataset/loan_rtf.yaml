@@ -1,0 +1,81 @@
+defaults:
+  - default_non_dequant
+name: loan_rtf
+type: binary-class
+
+columns:
+  - name: 00___NUMERIC___Age_00
+    index: 0
+    dtype: categorical
+  - name: 00___NUMERIC___Age_01
+    index: 1
+    dtype: categorical
+  - name: 01___NUMERIC___Experience_00
+    index: 2
+    dtype: categorical
+  - name: 01___NUMERIC___Experience_01
+    index: 3
+    dtype: categorical
+  - name: 02___NUMERIC___Income_00
+    index: 4
+    dtype: categorical
+  - name: 02___NUMERIC___Income_01
+    index: 5
+    dtype: categorical
+  - name: 02___NUMERIC___Income_02
+    index: 6
+    dtype: categorical
+  - name: 03___NUMERIC___ZIP Code_00
+    index: 7
+    dtype: categorical
+  - name: 03___NUMERIC___ZIP Code_01
+    index: 8
+    dtype: categorical
+  - name: 03___NUMERIC___ZIP Code_02
+    index: 9
+    dtype: categorical
+  - name: 04___NUMERIC___Family_00
+    index: 10
+    dtype: categorical
+  - name: 05___NUMERIC___CCAvg_00
+    index: 11
+    dtype: categorical
+  - name: 05___NUMERIC___CCAvg_01
+    index: 12
+    dtype: categorical
+  - name: 05___NUMERIC___CCAvg_02
+    index: 13
+    dtype: categorical
+  - name: 05___NUMERIC___CCAvg_03
+    index: 14
+    dtype: categorical
+  - name: 05___NUMERIC___CCAvg_04
+    index: 15
+    dtype: categorical
+  - name: 06___NUMERIC___Education_00
+    index: 16
+    dtype: categorical
+  - name: 07___NUMERIC___Mortgage_00
+    index: 17
+    dtype: categorical
+  - name: 07___NUMERIC___Mortgage_01
+    index: 18
+    dtype: categorical
+  - name: 07___NUMERIC___Mortgage_02
+    index: 19
+    dtype: categorical
+  - name: 08___NUMERIC___Securities Account_00
+    index: 20
+    dtype: categorical
+  - name: 09___NUMERIC___CD Account_00
+    index: 21
+    dtype: categorical
+  - name: 10___NUMERIC___Online_00
+    index: 22
+    dtype: categorical
+  - name: 11___NUMERIC___CreditCard_00
+    index: 23
+    dtype: categorical
+  - name: 12___NUMERIC___PersonalLoan_00
+    index: 24
+    dtype: categorical

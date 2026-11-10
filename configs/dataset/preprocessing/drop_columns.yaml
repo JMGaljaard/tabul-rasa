@@ -1,0 +1,5 @@
+# Either list indices or names
+columns:
+  - 8
+by_index: true
+method: "drop"

@@ -1,0 +1,3 @@
+exp_name_model: "learnable_schedule"
+scheduler: 'power_mean_per_column'      # 'power_mean', 'power_mean_unified', 'power_mean_per_column'
+cat_scheduler: 'log_linear_per_column'        # 'log_linear', 'log_linear_unified', 'log_linear_per_column'

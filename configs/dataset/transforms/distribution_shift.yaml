@@ -1,0 +1,8 @@
+defaults:
+  - default
+  - _self_
+
+# NOTE: column defined in the configs are all in disk ordering, tensor ordering is different.
+# NOTE: columns can be multipe
+columns: !!str ${unlearn.column}
+method: TensorRemapTransform

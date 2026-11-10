@@ -1,0 +1,50 @@
+defaults:
+  - default_non_dequant
+name: adult
+type: binary-class
+columns:
+  - name: age
+    index: 0
+    dtype: numerical
+  - name: workclass
+    index: 1
+    dtype: categorical
+  - name: fnlwgt
+    index: 2
+    dtype: numerical
+  - name: education
+    index: 3
+    dtype: categorical
+  - name: education.num
+    index: 4
+    dtype: numerical
+  - name: marital.status
+    index: 5
+    dtype: categorical
+  - name: occupation
+    index: 6
+    dtype: categorical
+  - name: relationship
+    index: 7
+    dtype: categorical
+  - name: race
+    index: 8
+    dtype: categorical
+  - name: sex
+    index: 9
+    dtype: categorical
+  - name: capital.gain
+    index: 10
+    dtype: numerical
+  - name: capital.loss
+    index: 11
+    dtype: numerical
+  - name: hours.per.week
+    index: 12
+    dtype: numerical
+  - name: native.country
+    index: 13
+    dtype: categorical
+  - name: income
+    index: 14
+    dtype: categorical

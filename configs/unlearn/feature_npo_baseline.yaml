@@ -1,0 +1,20 @@
+# Unlearning defaults for feature based unlearning with orthogonal goal
+defaults:
+  - default_vertical
+  - _self_
+
+beta: 2.0
+# Implements re-useable configuration for feature-wise unlearning
+# Note: provide column index
+method: "NegativePreferenceOptimization"
+# Because we implemented an extension, we also implement ...
+name: "feat_npo_bsln"
+trainer: "AlignTrainer"
+reference_model: true
+
+str_repr: NPObsln2-b=${.beta}_lr-${.main.lr}_step-${.main.steps}_${slice:${dataset.name},0,8}
+
+
+
+main:
+  check_val_every: 20

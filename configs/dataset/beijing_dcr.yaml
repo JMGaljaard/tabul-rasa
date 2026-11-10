@@ -1,0 +1,41 @@
+defaults:
+  - default_non_dequant
+name: beijing_dcr
+type: regression
+columns:
+  - name: year
+    index: 0
+    dtype: categorical
+  - name: month
+    index: 1
+    dtype: categorical
+  - name: day
+    index: 2
+    dtype: categorical
+  - name: hour
+    index: 3
+    dtype: categorical
+  - name: pm2.5
+    index: 4
+    dtype: categorical
+  - name: DEWP
+    index: 5
+    dtype: numerical
+  - name: TEMP
+    index: 6
+    dtype: numerical
+  - name: PRES
+    index: 7
+    dtype: numerical
+  - name: cbwd
+    index: 8
+    dtype: categorical
+  - name: Iws
+    index: 9
+    dtype: numerical
+  - name: Is
+    index: 10
+    dtype: numerical
+  - name: Ir
+    index: 11
+    dtype: numerical

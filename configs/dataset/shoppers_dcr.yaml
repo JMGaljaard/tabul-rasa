@@ -1,0 +1,59 @@
+defaults:
+  - default_non_dequant
+name: shoppers_dcr
+type: binary-class
+columns:
+  - name: Administrative
+    index: 0
+    dtype: numerical
+  - name: Administrative_Duration
+    index: 1
+    dtype: numerical
+  - name: Informational
+    index: 2
+    dtype: numerical
+  - name: Informational_Duration
+    index: 3
+    dtype: numerical
+  - name: ProductRelated
+    index: 4
+    dtype: numerical
+  - name: ProductRelated_Duration
+    index: 5
+    dtype: numerical
+  - name: BounceRates
+    index: 6
+    dtype: numerical
+  - name: ExitRates
+    index: 7
+    dtype: numerical
+  - name: PageValues
+    index: 8
+    dtype: numerical
+  - name: SpecialDay
+    index: 9
+    dtype: numerical
+  - name: Month
+    index: 10
+    dtype: categorical
+  - name: OperatingSystems
+    index: 11
+    dtype: categorical
+  - name: Browser
+    index: 12
+    dtype: categorical
+  - name: Region
+    index: 13
+    dtype: categorical
+  - name: TrafficType
+    index: 14
+    dtype: categorical
+  - name: VisitorType
+    index: 15
+    dtype: categorical
+  - name: Weekend
+    index: 16
+    dtype: categorical
+  - name: Revenue
+    index: 17
+    dtype: categorical

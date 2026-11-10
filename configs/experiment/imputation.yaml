@@ -1,0 +1,15 @@
+defaults:
+  - base_experiment
+
+name: imputation
+description: "Data imputation experiment with CFG."
+column_name: null
+column_index: -1
+
+# Following default parameters: https://github.com/MinkaiXu/TabDiff/blob/19bcdfead95cd0ffb753a1cf15e41558a18c4f60/main.py#L29-L36
+trial_start: 0
+trial_size: 50
+resample_rounds: 1
+impute_condition: "x_t"
+w_num: 0.6
+w_cat: 0.6

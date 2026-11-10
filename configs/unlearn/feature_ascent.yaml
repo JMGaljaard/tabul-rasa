@@ -1,0 +1,8 @@
+defaults:
+  - default_vertical
+  - _self_
+# Implements re-useable configuration for feature-wise unlearning
+# Note: provide column index
+method: "GradientAscent"
+name: "feature_ascent"
+str_repr: GA_${dataset.name}-${experiment.seed}_lr-${.main.lr}_step-${.main.steps}

@@ -1,0 +1,11 @@
+defaults:
+    - _self_
+    - tabdiff
+
+
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      dataset: adult, default # , news, default, magic, shoppers
+

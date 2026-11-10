@@ -1,0 +1,9 @@
+num_layers: 2
+d_token: 4
+n_head: 1
+factor: 32
+bias: true
+dim_t: 128
+use_mlp: false
+d_numerical: !!null     # TODO: Dataset dependent
+categories: !!null      # TODO: Dataset depenent

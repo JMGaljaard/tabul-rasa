@@ -1,0 +1,27 @@
+Bootstrap:      localimage
+From:           /var/scratch/$USER/tabdiff-deps.sif
+%setup
+        # Add default paths which will be mount points
+        mkdir -p \
+         $SINGULARITY_ROOTFS/workspace/configs \
+         $SINGULARITY_ROOTFS/workspace/data \
+         $SINGULARITY_ROOTFS/workspace/result \
+         $SINGULARITY_ROOTFS/workspace/outputs \
+         $SINGULARITY_ROOTFS/workspace/wandb \
+         $SINGULARITY_ROOTFS/workspace/synthetic
+
+%files
+        src                             /workspace/src
+        pyproject.toml                  /workspace/pyproject.toml
+        eval_quality.py                 /workspace/eval_quality.py
+        eval_quality_ddpm.py            /workspace/eval_quality_ddpm.py
+        setup.py                        /workspace/setup.py
+        shared.py                       /workspace/shared.py
+        train_ddpm_model.py             /workspace/train_ddpm_model.py
+        train_model.py                  /workspace/train_model.py
+        untrain_model.py                /workspace/untrain_model.py
+
+%post
+        # Install dependencies with provided SSH_AUTH_SOCK
+	cd /workspace
+        SSH_AUTH_SOCK={{ SSH_AUTH_SOCK }} python3.10 -m pip install /workspace

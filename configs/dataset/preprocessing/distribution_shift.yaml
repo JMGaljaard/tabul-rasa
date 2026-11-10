@@ -1,0 +1,7 @@
+# Either list indices or names
+# Refers to
+# Feature Unlearning: Theoretical Foundations and Practical Applications with Shuffling
+columns:
+  - 8
+by_index: true
+method: "distribution_shift"

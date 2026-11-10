@@ -1,0 +1,6 @@
+defaults:
+  - base_experiment
+
+name: train
+description: "Run training experiment."
+

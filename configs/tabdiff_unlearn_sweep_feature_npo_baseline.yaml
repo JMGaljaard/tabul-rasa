@@ -1,0 +1,31 @@
+defaults:
+    - tabdiff
+    - unlearn: feature_npo_baseline
+    - override dataset: magic
+    - override wandb: unlearn
+    - _self_
+
+# Only for feature shuffling
+dataset:
+  # Need different type of dataset
+  handler: AlignDataset
+  # Need different-from-default-pertrubation.
+  augment: !!null
+
+# TODO: Save-path / load path.
+
+exp_name: ${ unlearn.str_repr}_cl=${unlearn.column}_st=${unlearn.main.steps}
+model_load_path: ./ckpt/${dataset.name}=${experiment.seed}/${diffusion.exp_name_model}
+model_save_path: ./ckpt/${dataset.name}=${experiment.seed}/ul/${diffusion.exp_name_model}/${.exp_name}
+result_save_path: ./result/${dataset.name}=${experiment.seed}/ul/${diffusion.exp_name_model}/${.exp_name}
+
+
+# Unlearn layout
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      unlearn.column:  "'1','2','3'"
+      unlearn.main.lr:  1e-4,1e-3,1e-5
+      unlearn.main.steps: 1500
+      unlearn.beta: 200, 10, 5, 0.1, 0.01, 0.001

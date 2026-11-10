@@ -1,0 +1,149 @@
+defaults:
+  - default_non_dequant
+name: news
+type: regression
+columns:
+  - name: ' timedelta'
+    index: 0
+    dtype: numerical
+  - name: ' n_tokens_title'
+    index: 1
+    dtype: numerical
+  - name: ' n_tokens_content'
+    index: 2
+    dtype: numerical
+  - name: ' n_unique_tokens'
+    index: 3
+    dtype: numerical
+  - name: ' n_non_stop_words'
+    index: 4
+    dtype: numerical
+  - name: ' n_non_stop_unique_tokens'
+    index: 5
+    dtype: numerical
+  - name: ' num_hrefs'
+    index: 6
+    dtype: numerical
+  - name: ' num_self_hrefs'
+    index: 7
+    dtype: numerical
+  - name: ' num_imgs'
+    index: 8
+    dtype: numerical
+  - name: ' num_videos'
+    index: 9
+    dtype: numerical
+  - name: ' average_token_length'
+    index: 10
+    dtype: numerical
+  - name: ' num_keywords'
+    index: 11
+    dtype: numerical
+  - name: ' kw_min_min'
+    index: 12
+    dtype: numerical
+  - name: ' kw_max_min'
+    index: 13
+    dtype: numerical
+  - name: ' kw_avg_min'
+    index: 14
+    dtype: numerical
+  - name: ' kw_min_max'
+    index: 15
+    dtype: numerical
+  - name: ' kw_max_max'
+    index: 16
+    dtype: numerical
+  - name: ' kw_avg_max'
+    index: 17
+    dtype: numerical
+  - name: ' kw_min_avg'
+    index: 18
+    dtype: numerical
+  - name: ' kw_max_avg'
+    index: 19
+    dtype: numerical
+  - name: ' kw_avg_avg'
+    index: 20
+    dtype: numerical
+  - name: ' self_reference_min_shares'
+    index: 21
+    dtype: numerical
+  - name: ' self_reference_max_shares'
+    index: 22
+    dtype: numerical
+  - name: ' self_reference_avg_sharess'
+    index: 23
+    dtype: numerical
+  - name: ' LDA_00'
+    index: 24
+    dtype: numerical
+  - name: ' LDA_01'
+    index: 25
+    dtype: numerical
+  - name: ' LDA_02'
+    index: 26
+    dtype: numerical
+  - name: ' LDA_03'
+    index: 27
+    dtype: numerical
+  - name: ' LDA_04'
+    index: 28
+    dtype: numerical
+  - name: ' global_subjectivity'
+    index: 29
+    dtype: numerical
+  - name: ' global_sentiment_polarity'
+    index: 30
+    dtype: numerical
+  - name: ' global_rate_positive_words'
+    index: 31
+    dtype: numerical
+  - name: ' global_rate_negative_words'
+    index: 32
+    dtype: numerical
+  - name: ' rate_positive_words'
+    index: 33
+    dtype: numerical
+  - name: ' rate_negative_words'
+    index: 34
+    dtype: numerical
+  - name: ' avg_positive_polarity'
+    index: 35
+    dtype: numerical
+  - name: ' min_positive_polarity'
+    index: 36
+    dtype: numerical
+  - name: ' max_positive_polarity'
+    index: 37
+    dtype: numerical
+  - name: ' avg_negative_polarity'
+    index: 38
+    dtype: numerical
+  - name: ' min_negative_polarity'
+    index: 39
+    dtype: numerical
+  - name: ' max_negative_polarity'
+    index: 40
+    dtype: numerical
+  - name: ' title_subjectivity'
+    index: 41
+    dtype: numerical
+  - name: ' title_sentiment_polarity'
+    index: 42
+    dtype: numerical
+  - name: ' abs_title_subjectivity'
+    index: 43
+    dtype: numerical
+  - name: ' abs_title_sentiment_polarity'
+    index: 44
+    dtype: numerical
+  - name: ' shares'
+    index: 45
+    dtype: categorical
+  - name: data_channel
+    index: 46
+    dtype: categorical
+  - name: weekday
+    index: 47
+    dtype: categorical

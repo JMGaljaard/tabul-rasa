@@ -1,0 +1,18 @@
+bootstrap:      localimage
+From:           /var/scratch/jmgaljaa/pytorch-2.3.0.sif
+%setup
+        # Create /cm (common module) directory for flash-attn, as it requires $CUDA_HOME to be set.
+        mkdir -p $SINGULARITY_ROOTFS/cm/shared/apps/cuda-12.3
+
+%files
+	requirements.txt	/workspace/requirements.txt
+
+%post
+    dnf install -y 'dnf-command(config-manager)' && dnf config-manager --enable crb &&  yum install --assumeyes git git-lfs libaio-devel which gcc-c++ gcc ninja-build
+
+    # Install missing wheel dependency
+    python3.10 -m pip install wheel packaging
+
+	cd /workspace
+    # Install dependencies with provided SSH_AUTH_SOCK
+    SSH_AUTH_SOCK={{ SSH_AUTH_SOCK }} python3.10 -m pip install -r requirements.txt

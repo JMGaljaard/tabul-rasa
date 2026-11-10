@@ -1,0 +1,21 @@
+defaults:
+  - default_ul
+  - _self_
+
+orientation: "vertical"
+
+# Index of the column to 'forget' on, defaults to `0` column index
+# N.B. Must be defined by the unlearn run.
+column: !!str null
+# Retrieve the column 'index' defined, and look-up the dtype from the data-definition.
+dtype: ${dataset.columns[${.column}].dtype}
+
+# Increase on cluster / more than 24 cores
+evaluation_parallelism: 10
+seed: 54873116
+
+main:
+  metric_list:
+    - "mle"
+    - "c2st"
+    - "correlational_ul"

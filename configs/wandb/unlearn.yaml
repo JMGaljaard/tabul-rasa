@@ -1,0 +1,9 @@
+defaults:
+  - default
+  - _self_
+
+# Top-level
+group:  unlearn_${unlearn.method}_${dataset.name}
+# For each fodl we have a job-tyupe
+job_type: ul_${unlearn.str_repr}
+name: ${diffusion.exp_name_model}_${.job_type}

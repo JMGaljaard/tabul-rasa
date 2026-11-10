@@ -1,0 +1,38 @@
+defaults:
+  - default_non_dequant
+name: magic
+type: binary-class
+columns:
+  - name: Length
+    index: 0
+    dtype: numerical
+  - name: Width
+    index: 1
+    dtype: numerical
+  - name: Size
+    index: 2
+    dtype: numerical
+  - name: Conc
+    index: 3
+    dtype: numerical
+  - name: Conc1
+    index: 4
+    dtype: numerical
+  - name: Asym
+    index: 5
+    dtype: numerical
+  - name: M3Long
+    index: 6
+    dtype: numerical
+  - name: M3Trans
+    index: 7
+    dtype: numerical
+  - name: Alpha
+    index: 8
+    dtype: numerical
+  - name: Dist
+    index: 9
+    dtype: numerical
+  - name: class
+    index: 10
+    dtype: categorical

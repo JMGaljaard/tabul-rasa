@@ -1,0 +1,29 @@
+defaults:
+  - default_non_dequant
+name: housing
+type: regression
+columns:
+  - name: Square_Footage
+    index: 0
+    dtype: numerical
+  - name: Num_Bedrooms
+    index: 1
+    dtype: numerical
+  - name: Num_Bathrooms
+    index: 2
+    dtype: numerical
+  - name: Year_Built
+    index: 3
+    dtype: categorical
+  - name: Lot_Size
+    index: 4
+    dtype: numerical
+  - name: Garage_Size
+    index: 5
+    dtype: numerical
+  - name: Neighborhood_Quality
+    index: 6
+    dtype: numerical
+  - name: House_Price
+    index: 7
+    dtype: numerical

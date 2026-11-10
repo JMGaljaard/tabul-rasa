@@ -1,0 +1,11 @@
+# Unlearning defaults for feature based unlearning with orthogonal goal
+defaults:
+  - default_vertical
+  - _self_
+
+# Implements re-useable configuration for feature-wise unlearning
+# Note: provide column index
+method: "ScoreOrthogonal"
+name: "feature_orthogonal"
+str_repr: SO_${dataset.name}-${experiment.seed}_lr-${.main.lr}_step-${.main.steps}
+

@@ -1,0 +1,59 @@
+defaults:
+  - default_non_dequant
+name: compass
+type: binary-class
+columns:
+  - name: sex
+    index: 0
+    dtype: categorical
+  - name: age
+    index: 1
+    dtype: numerical
+  - name: age_cat
+    index: 2
+    dtype: categorical
+  - name: race
+    index: 3
+    dtype: categorical
+  - name: juv_fel_count
+    index: 4
+    dtype: numerical
+  - name: juv_misd_count
+    index: 5
+    dtype: numerical
+  - name: juv_other_count
+    index: 6
+    dtype: numerical
+  - name: priors_count
+    index: 7
+    dtype: numerical
+  - name: days_b_screening_arrest
+    index: 8
+    dtype: numerical
+  - name: c_days_from_compas
+    index: 9
+    dtype: numerical
+  - name: c_charge_degree
+    index: 10
+    dtype: categorical
+  - name: decile_score.1
+    index: 11
+    dtype: categorical
+  - name: score_text
+    index: 12
+    dtype: categorical
+  - name: v_type_of_assessment
+    index: 13
+    dtype: categorical
+  - name: v_decile_score
+    index: 14
+    dtype: categorical
+  - name: v_score_text
+    index: 15
+    dtype: categorical
+  - name: end
+    index: 16
+    dtype: numerical
+  - name: is_recid
+    index: 17
+    dtype: categorical

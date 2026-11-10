@@ -1,0 +1,89 @@
+defaults:
+  - default_non_dequant
+name: eye_movements
+type: multiclass
+columns:
+  - name: lineNo
+    index: 0
+    dtype: numerical
+  - name: assgNo
+    index: 1
+    dtype: numerical
+  - name: fixcount
+    index: 2
+    dtype: numerical
+  - name: firstPassCnt
+    index: 3
+    dtype: numerical
+  - name: P1stFixation
+    index: 4
+    dtype: categorical
+  - name: P2stFixation
+    index: 5
+    dtype: categorical
+  - name: prevFixDur
+    index: 6
+    dtype: numerical
+  - name: firstfixDur
+    index: 7
+    dtype: numerical
+  - name: firstPassFixDur
+    index: 8
+    dtype: numerical
+  - name: nextFixDur
+    index: 9
+    dtype: numerical
+  - name: firstSaccLen
+    index: 10
+    dtype: numerical
+  - name: lastSaccLen
+    index: 11
+    dtype: numerical
+  - name: prevFixPos
+    index: 12
+    dtype: numerical
+  - name: landingPos
+    index: 13
+    dtype: numerical
+  - name: leavingPos
+    index: 14
+    dtype: numerical
+  - name: totalFixDur
+    index: 15
+    dtype: numerical
+  - name: meanFixDur
+    index: 16
+    dtype: numerical
+  - name: nRegressFrom
+    index: 17
+    dtype: numerical
+  - name: regressLen
+    index: 18
+    dtype: numerical
+  - name: nextWordRegress
+    index: 19
+    dtype: categorical
+  - name: regressDur
+    index: 20
+    dtype: numerical
+  - name: pupilDiamMax
+    index: 21
+    dtype: numerical
+  - name: pupilDiamLag
+    index: 22
+    dtype: numerical
+  - name: timePrtctg
+    index: 23
+    dtype: numerical
+  - name: nWordsInTitle
+    index: 24
+    dtype: numerical
+  - name: titleNo
+    index: 25
+    dtype: numerical
+  - name: wordNo
+    index: 26
+    dtype: numerical
+  - name: label
+    index: 27
+    dtype: categorical

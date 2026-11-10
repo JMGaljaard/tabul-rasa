@@ -1,0 +1,305 @@
+defaults:
+  - default_non_dequant
+name: yolanda_ml
+type: regression
+columns:
+ - name: feat_0
+   index: 0
+   dtype: numerical
+ - name: feat_1
+   index: 1
+   dtype: numerical
+ - name: feat_2
+   index: 2
+   dtype: numerical
+ - name: feat_3
+   index: 3
+   dtype: numerical
+ - name: feat_4
+   index: 4
+   dtype: numerical
+ - name: feat_5
+   index: 5
+   dtype: numerical
+ - name: feat_6
+   index: 6
+   dtype: numerical
+ - name: feat_7
+   index: 7
+   dtype: numerical
+ - name: feat_8
+   index: 8
+   dtype: numerical
+ - name: feat_9
+   index: 9
+   dtype: numerical
+ - name: feat_10
+   index: 10
+   dtype: numerical
+ - name: feat_11
+   index: 11
+   dtype: numerical
+ - name: feat_12
+   index: 12
+   dtype: numerical
+ - name: feat_13
+   index: 13
+   dtype: numerical
+ - name: feat_14
+   index: 14
+   dtype: numerical
+ - name: feat_15
+   index: 15
+   dtype: numerical
+ - name: feat_16
+   index: 16
+   dtype: numerical
+ - name: feat_17
+   index: 17
+   dtype: numerical
+ - name: feat_18
+   index: 18
+   dtype: numerical
+ - name: feat_19
+   index: 19
+   dtype: numerical
+ - name: feat_20
+   index: 20
+   dtype: numerical
+ - name: feat_21
+   index: 21
+   dtype: numerical
+ - name: feat_22
+   index: 22
+   dtype: numerical
+ - name: feat_23
+   index: 23
+   dtype: numerical
+ - name: feat_24
+   index: 24
+   dtype: numerical
+ - name: feat_25
+   index: 25
+   dtype: numerical
+ - name: feat_26
+   index: 26
+   dtype: numerical
+ - name: feat_27
+   index: 27
+   dtype: numerical
+ - name: feat_28
+   index: 28
+   dtype: numerical
+ - name: feat_29
+   index: 29
+   dtype: numerical
+ - name: feat_30
+   index: 30
+   dtype: numerical
+ - name: feat_31
+   index: 31
+   dtype: numerical
+ - name: feat_32
+   index: 32
+   dtype: numerical
+ - name: feat_33
+   index: 33
+   dtype: numerical
+ - name: feat_34
+   index: 34
+   dtype: numerical
+ - name: feat_35
+   index: 35
+   dtype: numerical
+ - name: feat_36
+   index: 36
+   dtype: numerical
+ - name: feat_37
+   index: 37
+   dtype: numerical
+ - name: feat_38
+   index: 38
+   dtype: numerical
+ - name: feat_39
+   index: 39
+   dtype: numerical
+ - name: feat_40
+   index: 40
+   dtype: numerical
+ - name: feat_41
+   index: 41
+   dtype: numerical
+ - name: feat_42
+   index: 42
+   dtype: numerical
+ - name: feat_43
+   index: 43
+   dtype: numerical
+ - name: feat_44
+   index: 44
+   dtype: numerical
+ - name: feat_45
+   index: 45
+   dtype: numerical
+ - name: feat_46
+   index: 46
+   dtype: numerical
+ - name: feat_47
+   index: 47
+   dtype: numerical
+ - name: feat_48
+   index: 48
+   dtype: numerical
+ - name: feat_49
+   index: 49
+   dtype: numerical
+ - name: feat_50
+   index: 50
+   dtype: numerical
+ - name: feat_51
+   index: 51
+   dtype: numerical
+ - name: feat_52
+   index: 52
+   dtype: numerical
+ - name: feat_53
+   index: 53
+   dtype: numerical
+ - name: feat_54
+   index: 54
+   dtype: numerical
+ - name: feat_55
+   index: 55
+   dtype: numerical
+ - name: feat_56
+   index: 56
+   dtype: numerical
+ - name: feat_57
+   index: 57
+   dtype: numerical
+ - name: feat_58
+   index: 58
+   dtype: numerical
+ - name: feat_59
+   index: 59
+   dtype: numerical
+ - name: feat_60
+   index: 60
+   dtype: numerical
+ - name: feat_61
+   index: 61
+   dtype: numerical
+ - name: feat_62
+   index: 62
+   dtype: numerical
+ - name: feat_63
+   index: 63
+   dtype: numerical
+ - name: feat_64
+   index: 64
+   dtype: numerical
+ - name: feat_65
+   index: 65
+   dtype: numerical
+ - name: feat_66
+   index: 66
+   dtype: numerical
+ - name: feat_67
+   index: 67
+   dtype: numerical
+ - name: feat_68
+   index: 68
+   dtype: numerical
+ - name: feat_69
+   index: 69
+   dtype: numerical
+ - name: feat_70
+   index: 70
+   dtype: numerical
+ - name: feat_71
+   index: 71
+   dtype: numerical
+ - name: feat_72
+   index: 72
+   dtype: numerical
+ - name: feat_73
+   index: 73
+   dtype: numerical
+ - name: feat_74
+   index: 74
+   dtype: numerical
+ - name: feat_75
+   index: 75
+   dtype: numerical
+ - name: feat_76
+   index: 76
+   dtype: numerical
+ - name: feat_77
+   index: 77
+   dtype: numerical
+ - name: feat_78
+   index: 78
+   dtype: numerical
+ - name: feat_79
+   index: 79
+   dtype: numerical
+ - name: feat_80
+   index: 80
+   dtype: numerical
+ - name: feat_81
+   index: 81
+   dtype: numerical
+ - name: feat_82
+   index: 82
+   dtype: numerical
+ - name: feat_83
+   index: 83
+   dtype: numerical
+ - name: feat_84
+   index: 84
+   dtype: numerical
+ - name: feat_85
+   index: 85
+   dtype: numerical
+ - name: feat_86
+   index: 86
+   dtype: numerical
+ - name: feat_87
+   index: 87
+   dtype: numerical
+ - name: feat_88
+   index: 88
+   dtype: numerical
+ - name: feat_89
+   index: 89
+   dtype: numerical
+ - name: feat_90
+   index: 90
+   dtype: numerical
+ - name: feat_91
+   index: 91
+   dtype: numerical
+ - name: feat_92
+   index: 92
+   dtype: numerical
+ - name: feat_93
+   index: 93
+   dtype: numerical
+ - name: feat_94
+   index: 94
+   dtype: numerical
+ - name: feat_95
+   index: 95
+   dtype: numerical
+ - name: feat_96
+   index: 96
+   dtype: numerical
+ - name: feat_97
+   index: 97
+   dtype: numerical
+ - name: feat_98
+   index: 98
+   dtype: numerical
+ - name: feat_99
+   index: 99
+   dtype: numerical

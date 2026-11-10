@@ -1,0 +1,31 @@
+defaults:
+    - tabdiff
+    - unlearn: feature_shuffle
+    - override dataset: magic
+    - override wandb: unlearn
+    - _self_
+
+# Only for feature shuffling
+dataset:
+  # Need different type of dataset
+  handler: AlignDataset
+  # Need different-from-default-pertrubation.
+  augment: PerturbAugment
+
+# TODO: Save-path / load path.
+exp_name: ${unlearn.str_repr}_cl=${unlearn.column}_st=${unlearn.main.steps}
+model_load_path: ./ckpt/${dataset.name}=${experiment.seed}/${diffusion.exp_name_model}
+model_save_path: ./ckpt/${dataset.name}=${experiment.seed}/ul/${diffusion.exp_name_model}/${.exp_name}
+result_save_path: ./result/${dataset.name}=${experiment.seed}/ul/${diffusion.exp_name_model}/${.exp_name}
+
+
+# Unlearn layout
+hydra:
+  mode: MULTIRUN
+  sweeper:
+    params:
+      unlearn.column: "'1','2','3'"
+      unlearn.main.steps: 500, 1500            # , 100, 50, 20
+      unlearn.main.lr:  1e-6,  1e-5, 1e-4, 1e-3 # , 0.00001, 0.0001, 0.001 # , 0.01
+#      unlearn.column:  "'9','8', '0'"         # Define as a list of strings, explicitly escaped
+      # For multi-columns unlearn.column:  "'8,9', '0,1,4'"

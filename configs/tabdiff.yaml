@@ -1,0 +1,45 @@
+defaults:
+  - experiment: train
+  - diffusion: default
+  - dataset: adult
+  - wandb: train
+  - _self_
+
+project_name: j-m-galjaard-delft-university-of-technology/feta
+
+exp_name: ${diffusion.exp_name_model}
+model_save_path: ./ckpt/${dataset.name}=${experiment.seed}/${exp_name}
+result_save_path: ./result/${dataset.name}=${experiment.seed}/${exp_name}
+deterministic: false
+
+train:
+  metric_list:
+    - "density"
+    - "mle"
+    - "c2st"
+
+  main:
+    # TODO: we abuse steps now for epochs
+    steps: 8000
+    lr: 0.001
+    weight_decay: 0
+    ema_decay: 0.997
+    batch_size: 4096
+    check_val_every: 500
+    lr_scheduler: reduce_lr_on_plateau
+    factor: 0.90           # hyperparam for reduce_lr_on_plateau
+    reduce_lr_patience: 50        # hyperparam for reduce_lr_on_plateau
+    # See TabDiff appendix D. https://arxiv.org/pdf/2410.20626#appendix.D
+    loss_schedules:
+      discrete:
+        weight_schedule: ConstantSchedule
+        loss_lambda: 1.0
+        steps: ${train.main.steps}
+      continuous:
+        weight_schedule: AnnealSchedule
+        loss_lambda: 1.0
+        steps: ${train.main.steps}
+
+
+sample:
+  batch_size: 50000

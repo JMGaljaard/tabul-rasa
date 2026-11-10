@@ -1,0 +1,5 @@
+defaults:
+  - base_experiment
+
+name: dcr
+description: "Experiment running with Distance to Closest Record, i.e."
